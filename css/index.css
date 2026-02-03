@@ -2,17 +2,19 @@
  
 *{
     margin: 0;
+    font-size: 22px;
 }
 
 body{
     font-family: "Barlow", sans-serif;
     color:#282b7a;
-    font-size: 1.7rem;
     }
+
+
 .nav-bar {
     background: linear-gradient(to bottom,  rgb(158, 158, 158) 0%,rgb(224,243,250) 0%,rgb(67, 179, 254) 100%);
     width: 100%;
-    position: fixed;
+    position: sticky;
     top: 0;
     text-align: right;
   }
@@ -22,58 +24,112 @@ body{
     display: inline-block;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-right: 20px;
 }
 
 .nav-bar a {
     color: #4d598e;
     text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: bold;
 }
 main {
-    margin-top: 68px;
     background-image: url(../images/background.jpg);
     background-size: cover;
+    padding-left: 65px;
+}
+
+h1 {
+    display: flex;
+    font-style: oblique;
+    text-decoration: underline;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#avatar {
+    flex: 2;
 }
 
 #myname {
     color: #2d2f5f;
-    padding-left: 65px;
-    padding-top: 60px;
+    padding-top: 20px;
 }
 
 #photo img {
-    width: 25%;
+    width: 40%;
     padding-top: 20px;
-    padding-left: 65px;
+    border-radius: 50%;
 }
 
 #about {
-    font-style: italic;
     display: flex;
-    flex-direction: row;
-    align-items: left;
-    justify-items: first baseline;
+    flex:3;
+    flex-direction: column;
     gap: 20px;
     padding-top: 20px;
-    padding-left: 65px;
+
 }
 
 #experience {
+    > h2 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+    > ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 20px;
+
+          > li {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            > div {
+                font-weight: bold;
+                display: flex;
+                flex-direction: row;
+                gap: 5%;
+                text-decoration: ;
+            }
+          }
+    }
+
+}
+
+#skills {
     display: flex;
     flex-direction: column;
     align-items: left;
     gap: 20px;
     padding-top: 20px;
-    padding-left: 65px;
-
+    
     > ul {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
     }
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+#projects img {
+    width: 3%;
+    border-radius: 10%;
 }
 
 #contact-block {
@@ -84,11 +140,11 @@ main {
     gap: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 65px;
 }
 
 #contact-block img {
-    width: 20%;
+    width: 10%;
+    border-radius: 10%;
 }
 
 footer {
