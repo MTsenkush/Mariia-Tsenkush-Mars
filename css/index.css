@@ -8,6 +8,8 @@
 body{
     font-family: "Barlow", sans-serif;
     color:#282b7a;
+    width: 1440px;
+    margin: auto;
     }
 
 
@@ -35,16 +37,12 @@ body{
 main {
     background-image: url(../images/background.jpg);
     background-size: cover;
-    padding-left: 65px;
+    padding: 65px;
 }
 
-h1 {
-    display: flex;
-    font-style: oblique;
-    text-decoration: underline;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    justify-content: center;
+#logo img{
+    padding: 0;
+    width: 100%;
 }
 
 .introduction {
@@ -59,11 +57,11 @@ h1 {
 
 #myname {
     color: #2d2f5f;
-    padding-top: 20px;
+    padding-top: 65px;
 }
 
 #photo img {
-    width: 40%;
+    width: 52%;
     padding-top: 20px;
     border-radius: 50%;
 }
@@ -73,13 +71,13 @@ h1 {
     flex:3;
     flex-direction: column;
     gap: 20px;
-    padding-top: 20px;
+    padding-top: 65px;
 
 }
 
 #experience {
     > h2 {
-        padding-top: 20px;
+        padding-top: 65px;
         padding-bottom: 20px;
 
     }
@@ -97,8 +95,8 @@ h1 {
                 font-weight: bold;
                 display: flex;
                 flex-direction: row;
+                justify-content: space-between;
                 gap: 5%;
-                text-decoration: ;
             }
           }
     }
@@ -106,39 +104,28 @@ h1 {
 }
 
 #skills {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    gap: 20px;
-    padding-top: 20px;
-    
-    > ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
+    margin-top: 65px;
 }
+
+#skills ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    }
 
 #projects {
     display: flex;
     flex-direction: column;
-    align-items: left;
     gap: 20px;
-    padding-top: 20px;
-}
-
-#projects img {
-    width: 3%;
-    border-radius: 10%;
+    padding-top: 65px;
 }
 
 #contact-block {
     display: flex;
     flex-direction: row;
-    align-items: left;
-    justify-items: first baseline;
     gap: 20px;
-    padding-top: 20px;
+    padding-top: 65px;
     padding-bottom: 20px;
 }
 
