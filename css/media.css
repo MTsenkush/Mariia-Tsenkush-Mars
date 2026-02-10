@@ -1,0 +1,106 @@
+/*Responsive design*/
+
+@media (max-width: 1024px ) {
+
+    *{
+        font-size: 20px;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    .nav-bar a {
+        color: #282b7a;
+        text-decoration: underline;
+    }
+
+    .introduction {
+        border:5px solid #0f2139;
+        padding: 10px;
+    }
+
+    #experience {
+        border:5px solid #0f2139;
+        padding: 10px;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    *{
+        font-size: 18px;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    .nav-bar li {
+        display: none;
+    }
+
+    main {
+        padding: 30px;
+        border: 10px solid #0f2139;
+    }
+    #logo img {
+        box-sizing: border-box;
+        border: 5px solid #ead58a;
+        border-radius: 25px;
+
+    }
+    
+    .introduction {
+        border-color: #ead58a;
+        border-radius: 25px;
+        padding: 10px;
+    }
+    #experience {
+        border-color: #ead58a;
+        border-radius: 25px;
+    }
+
+    #photo img {
+        width: 180px;
+    }
+6}
+
+@media (max-width: 480px) {
+
+    *{
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    body{
+        width: 100%;
+    }
+
+    #logo img{
+        display: none;
+    }
+    
+    #photo img {
+        width: 160px;
+    }
+
+    .introduction {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    #myname {
+        padding-top: 0;
+        text-align: center;
+    }
+
+    #about {
+        padding-top: 0;
+        text-align: center;
+    }
+    
+}
