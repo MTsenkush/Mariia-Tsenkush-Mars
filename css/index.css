@@ -135,6 +135,75 @@ main {
     border-radius: 10%;
 }
 
+#leave-message {
+    margin-top: 65px;
+    margin-bottom: 20px;
+    > form {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        gap: 10px;
+        > input, textarea {
+            border: 2px solid #282b7a;
+            border-radius: 10px;
+            box-sizing: border-box;
+            padding: 5px;
+            width: 100%;
+        }
+        > textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        > button {
+            margin-top: 20px;
+            border: 2px solid #282b7a;
+            border-radius: 10px;
+            box-sizing: border-box;
+            padding: 5px;
+            width: 100%;
+            font-family: "Barlow", sans-serif;
+            font-weight: bold;
+            color:#282b7a;
+        }
+
+    }
+}
+
+#messages {
+    margin-top: 65px;
+    max-width: 400px;
+    
+    > h2 {
+        margin-bottom: 20px;}
+        
+    > ul {
+        max-width: 400px;
+        ;
+    
+        > li {
+                line-break: anywhere;
+                margin-top: 20px;
+                padding: 10px;
+                font-family: "Barlow", sans-serif;
+                font-weight: bold;
+                color:#282b7a;
+            
+        > button {
+            display: block;
+            margin-top: 20px;
+            border: 2px solid #282b7a;
+            border-radius: 10px;
+            box-sizing: border-box;
+            padding: 5px;
+                
+            }
+        }
+    }
+}
+
+}
+
 footer {
     background: linear-gradient(to top,  rgb(158, 158, 158) 0%,rgb(224,243,250) 0%,rgb(1, 103, 171) 100%);
     margin-left: auto;
