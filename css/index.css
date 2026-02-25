@@ -105,7 +105,9 @@ main {
 
 #skills { 
     
-    margin-top: 65px;
+    > h2 {
+        padding-top: 65px;
+        padding-bottom: 20px;}
     
     > ul {
     display: grid;
@@ -116,28 +118,31 @@ main {
 }
 
 #projects {
-    margin-top: 65px;
-    display: flex;
-    flex-direction: row;
+    > h2 {margin-top: 65px;}
+    display: grid;
+    grid-direction: row;
     gap: 20px;
 }
 
 #contact-block {
+    > h2 {
+        padding-top: 65px;
+        padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding-top: 65px;
-    padding-bottom: 20px;
+    }
 }
 
 #contact-block img {
-    width: 10%;
+    width: 50px;
     border-radius: 10%;
 }
 
 #leave-message {
-    margin-top: 65px;
+    > h2 {margin-top: 65px;
     margin-bottom: 20px;
+    }
     > form {
         margin-top: 20px;
         display: flex;
@@ -171,10 +176,10 @@ main {
 }
 
 #messages {
-    margin-top: 65px;
     max-width: 400px;
     
     > h2 {
+        margin-top: 65px;
         margin-bottom: 20px;}
         
     > ul {
