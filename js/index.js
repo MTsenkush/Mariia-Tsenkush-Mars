@@ -1,8 +1,8 @@
-// nav-bar
+// ----- NAV-BAR -----
 
 
 
-// Skills
+// ----- SKILLS -----
 
 const skills = [
     "JavaScript",
@@ -37,7 +37,7 @@ skillsList.appendChild(newSkill);
 
 
 
-// Footer
+// ----- FOOTER -----
 
 //If we dont have <footer> in HTML: const footer = document.createElement("footer");
 //document.body.appendChild(footer);
@@ -55,7 +55,7 @@ copyright.innerText = `© Mariia Tsenkush ${thisYear}`;
 footer.appendChild(copyright);
 
 
-//MESSAGES
+// ----- MESSAGES -----
 
 //const messageForm = document.querySelector('form[name="leave_message"]');
 const messageForm = document.getElementsByName("leave_message")[0];
@@ -92,3 +92,30 @@ messageForm.addEventListener("submit",function(event){
 
     messageForm.reset();
 });
+
+// ----- PROJECTS -----
+
+//Fetch GitHub repository
+
+fetch ("https://api.github.com/users/MTsenkush/repos")
+    .then(response => response.json())
+    .then(data => {
+        const repositories = data;
+        console.log(repositories);
+        const projectSection = document.getElementById("projects");
+        const projectList = projectSection.querySelector("ul");
+
+        for (let i = 0; i < repositories.length; i++) {
+            const project = document.createElement("li");
+            const link = document.createElement("a");
+            link.innerText = repositories[i]["name"];
+            link.href = repositories[i]["html_url"];
+            link.target = "_blank";
+            project.appendChild(link);
+            projectList.appendChild(project);
+        }
+    })
+    
+    .catch(error => {
+    console.error("Error fetching repositories", error)
+  });
