@@ -24,4 +24,4 @@ Project entry point: ./index.html
 
 Or via [Live Demo](https://mtsenkush.github.io/Mariia-Tsenkush-Mars/)
 
-Also you can visit [Open IPA Project](https://github.com/MTsenkush/My-Open-API-Project)
+Also you can visit [my Open IPA Project](https://github.com/MTsenkush/My-Open-API-Project)
