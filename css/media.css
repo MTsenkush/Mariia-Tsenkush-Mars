@@ -39,9 +39,12 @@
         width: 100%;
     }
 
-    .nav-bar li {
-        display: none;
+    .nav-bar {
+        text-align: center;        
     }
+    .nav-bar li {
+    padding: 5px;
+}
 
     main {
         padding: 30px;
