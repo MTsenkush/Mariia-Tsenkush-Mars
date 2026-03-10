@@ -22,6 +22,6 @@ git@github.com:MTsenkush/Mariia-Tsenkush-Mars.git
 
 Project entry point: ./index.html
 
-Or via [Live Demo](https://https://mtsenkush.github.io/Mariia-Tsenkush-Mars)
+Or via [Live Demo](https://https://mtsenkush.github.io/Mariia-Tsenkush-Mars/)
 
 Also you can visit [Open IPA Project](https://github.com/MTsenkush/My-Open-API-Project)
