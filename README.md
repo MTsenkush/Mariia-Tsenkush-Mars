@@ -18,7 +18,7 @@ Stack of Techonogies:
 - HTTP requests(GitHub API integration).
 
 You can clone the progect and run localy using this SSH:
-"git@github.com:MTsenkush/Mariia-Tsenkush-Mars.git"
+`git@github.com:MTsenkush/Mariia-Tsenkush-Mars.git`
 
 Project entry point: ./index.html
 
